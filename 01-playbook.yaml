@@ -4,4 +4,4 @@
   connection: local 
   tasks: 
     - name: ping 
-      ansible.builtin.ping: check
+      ansible.builtin.ping: 
