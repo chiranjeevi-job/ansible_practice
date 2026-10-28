@@ -1,0 +1,11 @@
+--- 
+- name: varibales 
+  hosts: local  
+  connection: local  
+  vars: 
+    name: chiranjeevi 
+    role: devops
+  tasks: 
+  - name: varibaledemo 
+    ansible.builtin.debug: 
+      msg: "name is {{name}} and role is {{role}}"
