@@ -1,0 +1,23 @@
+--- 
+- name: player1 
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: player1 
+    ansible.builtin.debug: 
+      msg: "player1 is learning ansible"   
+  - name: player2 
+    ansible.builtin.debug: 
+      msg: "player2 is learning ansible"  
+
+
+- name: player2 
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: player1 
+    ansible.builtin.debug: 
+      msg: "player1 is learning ansible"   
+  - name: player2 
+    ansible.builtin.debug: 
+      msg: "player2 is learning ansible"
