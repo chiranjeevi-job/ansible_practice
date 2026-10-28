@@ -1,7 +1,7 @@
 ---
 - name: ping demo  
   hosts: local 
-  connection:local 
+  connection: local 
   tasks: 
     - name: ping 
-      ping
+      ansible.builtin.ping: check
