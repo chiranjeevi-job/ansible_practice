@@ -2,14 +2,9 @@
 - name: varibales 
   hosts: local  
   connection: local  
-  vars: 
-    name: chiranjeevi 
-    role: devops
-  tasks: 
-   - name: varibaledemo  
-     vars:  
-       name: lokesh
-       role: bpm
-      
+  vars_files:
+   - course.yml 
+  task: 
+   - name: print 
      ansible.builtin.debug: 
-       msg: "name is {{name}} and role is {{role}}"
+       msg: "{{name}} is learning {{course}}"
