@@ -4,7 +4,7 @@
   connection: local  
   vars_files:
    - course.yml 
-  task: 
+  tasks: 
    - name: print 
      ansible.builtin.debug: 
        msg: "{{name}} is learning {{course}}"
